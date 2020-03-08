@@ -20,6 +20,17 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>MontserratAlternates-BoldItalic.ttf</string>
+		<string>MontserratAlternates-ExtraLightItalic.ttf</string>
+		<string>MontserratAlternates-Italic.ttf</string>
+		<string>MontserratAlternates-Light.ttf</string>
+		<string>MontserratAlternates-Medium.ttf</string>
+		<string>MontserratAlternates-Regular.ttf</string>
+		<string>PlayfairDisplaySC-Bold.ttf</string>
+		<string>PlayfairDisplaySC-Regular.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -50,8 +61,7 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
