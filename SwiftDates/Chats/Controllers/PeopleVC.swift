@@ -43,5 +43,9 @@ extension PeopleVC: UITableViewDelegate, UITableViewDataSource {
 		return cell
 	}
 
+	func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+		self.performSegue(withIdentifier: Segues.PeopleToProfileDetails.rawValue, sender: self)
+	}
+
 
 }

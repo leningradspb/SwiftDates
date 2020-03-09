@@ -18,16 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		UINavigationBar.appearance().tintColor = Colors.shared.white
 		UINavigationBar.appearance().barTintColor = Colors.shared.red
+		//UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MontserratAlternates-Medium", size: 17.0)!], for: .normal)
 		//UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor : Colors.shared.white]
 		UITabBar.appearance().barTintColor = Colors.shared.red
 		UITabBar.appearance().tintColor = Colors.shared.white
 		UITabBar.appearance().unselectedItemTintColor = Colors.shared.gray
 
+		
 
-		UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "MontserratAlternates-Medium", size: 17)!]
+		UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: Fonts.MontserratAlternatesMedium.rawValue, size: 17)!]
+// TODO: это не работает UIBarButtonItem.appearance().setTitleTextAttributes
+		//UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: Fonts.MontserratAlternatesMedium.rawValue, size: 15)!], for: UIControl.State.focused)
+		UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: Fonts.MontserratAlternatesMedium.rawValue, size: 12)!], for: .normal)
+		UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: Fonts.MontserratAlternatesMedium.rawValue, size: 15)!], for: .selected)
 
-		UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MontserratAlternates-Medium", size: 12)!], for: .normal)
-		UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "MontserratAlternates-Medium", size: 15)!], for: .selected)
 
 
 		

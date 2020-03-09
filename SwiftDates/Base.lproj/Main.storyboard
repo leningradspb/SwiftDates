@@ -6,8 +6,13 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="MontserratAlternates-Regular.ttf">
+            <string>MontserratAlternates-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Гоу на свидание-->
+        <!--ЛЮДИ-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PeopleVC" customModule="SwiftDates" customModuleProvider="target" sceneMemberID="viewController">
@@ -74,14 +79,109 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Гоу на свидание" id="wms-fA-jP2"/>
+                    <navigationItem key="navigationItem" title="ЛЮДИ" id="wms-fA-jP2"/>
                     <connections>
                         <outlet property="tableView" destination="pVp-MR-Uy7" id="UrB-Tb-jO0"/>
+                        <segue destination="uf8-fb-pVD" kind="show" identifier="PeopleToProfileDetails" id="BJX-7x-hnJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1882.608695652174" y="-271.20535714285711"/>
+        </scene>
+        <!--Mila Kunis-->
+        <scene sceneID="T96-zx-5ij">
+            <objects>
+                <viewController id="uf8-fb-pVD" customClass="PeopleProfileDetailsVC" customModule="SwiftDates" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4E4-Gu-ASr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxb-UN-eDI">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wg-Uo-Kxo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5P-9X-A3h">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="651"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aB6-6q-etZ">
+                                                        <rect key="frame" x="10" y="0.0" width="394" height="470"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="470" id="4O4-jN-swo"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu3-sJ-DMS">
+                                                        <rect key="frame" x="134" y="485.5" width="146" height="83"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="83.5" id="IpM-Cb-I9H"/>
+                                                            <constraint firstAttribute="width" constant="146" id="yCJ-09-Uvn"/>
+                                                        </constraints>
+                                                        <state key="normal" backgroundImage="text.bubble" catalog="system"/>
+                                                        <connections>
+                                                            <action selector="onChat:" destination="uf8-fb-pVD" eventType="touchUpInside" id="fVq-o3-rPu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Description Description Description Description DescriptionDescription" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1H-bb-aV1">
+                                                        <rect key="frame" x="10" y="578.5" width="394" height="62.5"/>
+                                                        <fontDescription key="fontDescription" name="MontserratAlternates-Regular" family="Montserrat Alternates" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="aB6-6q-etZ" firstAttribute="leading" secondItem="W5P-9X-A3h" secondAttribute="leading" constant="10" id="7JF-8Q-qQ3"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Q1H-bb-aV1" secondAttribute="bottom" constant="10" id="NHA-4G-BfG"/>
+                                                    <constraint firstItem="Eu3-sJ-DMS" firstAttribute="centerX" secondItem="W5P-9X-A3h" secondAttribute="centerX" id="PNk-zh-kjD"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Q1H-bb-aV1" secondAttribute="trailing" constant="10" id="QyL-qa-BSI"/>
+                                                    <constraint firstItem="Eu3-sJ-DMS" firstAttribute="top" secondItem="aB6-6q-etZ" secondAttribute="bottom" constant="15" id="WyR-AX-Vgd"/>
+                                                    <constraint firstItem="Q1H-bb-aV1" firstAttribute="leading" secondItem="W5P-9X-A3h" secondAttribute="leading" constant="10" id="dLj-Me-wdy"/>
+                                                    <constraint firstItem="Q1H-bb-aV1" firstAttribute="top" secondItem="Eu3-sJ-DMS" secondAttribute="bottom" constant="10" id="hWa-wQ-1OH"/>
+                                                    <constraint firstItem="aB6-6q-etZ" firstAttribute="top" secondItem="W5P-9X-A3h" secondAttribute="top" id="pDf-tE-y68"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aB6-6q-etZ" secondAttribute="trailing" constant="10" id="snx-Rh-T0i"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="W5P-9X-A3h" firstAttribute="top" secondItem="4wg-Uo-Kxo" secondAttribute="top" id="Faz-GQ-bQH"/>
+                                            <constraint firstItem="W5P-9X-A3h" firstAttribute="leading" secondItem="4wg-Uo-Kxo" secondAttribute="leading" id="Ry8-BL-q6V"/>
+                                            <constraint firstAttribute="trailing" secondItem="W5P-9X-A3h" secondAttribute="trailing" id="XL9-0q-xQ6"/>
+                                            <constraint firstAttribute="bottom" secondItem="W5P-9X-A3h" secondAttribute="bottom" priority="250" id="abd-Pd-HVJ"/>
+                                            <constraint firstItem="W5P-9X-A3h" firstAttribute="centerY" secondItem="4wg-Uo-Kxo" secondAttribute="centerY" priority="250" id="pX9-MX-Wuq"/>
+                                            <constraint firstItem="W5P-9X-A3h" firstAttribute="centerX" secondItem="4wg-Uo-Kxo" secondAttribute="centerX" id="sL0-zC-WeV"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4wg-Uo-Kxo" secondAttribute="bottom" id="3XU-12-fNZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="4wg-Uo-Kxo" secondAttribute="trailing" id="5ys-e9-T8M"/>
+                                    <constraint firstItem="4wg-Uo-Kxo" firstAttribute="leading" secondItem="cxb-UN-eDI" secondAttribute="leading" id="6hN-Zt-lLq"/>
+                                    <constraint firstItem="4wg-Uo-Kxo" firstAttribute="top" secondItem="cxb-UN-eDI" secondAttribute="top" id="NZC-pE-qfF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HIk-wS-M2v" firstAttribute="bottom" secondItem="cxb-UN-eDI" secondAttribute="bottom" id="K4d-eu-yJs"/>
+                            <constraint firstItem="HIk-wS-M2v" firstAttribute="trailing" secondItem="cxb-UN-eDI" secondAttribute="trailing" id="MvU-KG-zdJ"/>
+                            <constraint firstItem="cxb-UN-eDI" firstAttribute="top" secondItem="HIk-wS-M2v" secondAttribute="top" id="TE2-o0-L9c"/>
+                            <constraint firstItem="cxb-UN-eDI" firstAttribute="leading" secondItem="HIk-wS-M2v" secondAttribute="leading" id="u73-2h-Xsw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HIk-wS-M2v"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mila Kunis" id="HSd-Kw-Wuc"/>
+                    <connections>
+                        <outlet property="chat" destination="Eu3-sJ-DMS" id="DLm-9X-AIZ"/>
+                        <outlet property="photo" destination="aB6-6q-etZ" id="ZNU-Ps-hNt"/>
+                        <outlet property="profileDescription" destination="Q1H-bb-aV1" id="JCe-e1-0Yo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jkH-OS-okj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2582.608695652174" y="-273.21428571428572"/>
         </scene>
         <!--О НАС-->
         <scene sceneID="wlb-ws-WwT">
@@ -177,6 +277,7 @@
         <image name="heart.fill" catalog="system" width="64" height="54"/>
         <image name="person.3.fill" catalog="system" width="71" height="34"/>
         <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
+        <image name="text.bubble" catalog="system" width="64" height="54"/>
         <image name="text.bubble.fill" catalog="system" width="64" height="54"/>
     </resources>
 </document>
