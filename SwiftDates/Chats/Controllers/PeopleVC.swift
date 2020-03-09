@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AllChatsVC: UIViewController {
+class PeopleVC: UIViewController {
 
 	@IBOutlet weak var tableView: UITableView!
 	
@@ -28,13 +28,13 @@ class AllChatsVC: UIViewController {
 
 }
 
-extension AllChatsVC: UITableViewDelegate, UITableViewDataSource {
+extension PeopleVC: UITableViewDelegate, UITableViewDataSource {
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return 10
 	}
 
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		guard let cell = tableView.dequeueReusableCell(withIdentifier: CellsID.MainChatCellID.rawValue, for: indexPath) as? MainChatCell else { return UITableViewCell() }
+		guard let cell = tableView.dequeueReusableCell(withIdentifier: CellsID.PeopleCellID.rawValue, for: indexPath) as? PeopleCell else { return UITableViewCell() }
 		let sum = "Mila Kunis"
 
 		cell.name.text = sum

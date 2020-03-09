@@ -10,16 +10,16 @@
         <!--Гоу на свидание-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="AllChatsVC" customModule="SwiftDates" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PeopleVC" customModule="SwiftDates" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-MR-Uy7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pVp-MR-Uy7">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="MainChatCellID" rowHeight="492" id="OXC-zZ-WQA" customClass="MainChatCell" customModule="SwiftDates" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PeopleCellID" rowHeight="492" id="OXC-zZ-WQA" customClass="PeopleCell" customModule="SwiftDates" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="492"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OXC-zZ-WQA" id="w0Y-md-64Q">
@@ -97,7 +97,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtt-nk-dUy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="1025"/>
+            <point key="canvasLocation" x="501" y="1232"/>
+        </scene>
+        <!--ЧАТЫ-->
+        <scene sceneID="pqO-Nr-tEc">
+            <objects>
+                <viewController id="K2L-gR-qQ7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Fb-ao-3oe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="39v-CC-32F"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ЧАТЫ" image="text.bubble.fill" catalog="system" id="aDV-dt-Oln"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SCe-Gx-xMA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1943" y="407"/>
         </scene>
         <!--Я-->
         <scene sceneID="kno-YH-0qo">
@@ -113,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="be8-tr-dUH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1884" y="443"/>
+            <point key="canvasLocation" x="1472" y="1127"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kCb-Lm-fae">
@@ -127,19 +143,20 @@
                     </tabBar>
                     <connections>
                         <segue destination="SFj-JS-og9" kind="relationship" relationship="viewControllers" id="5Sd-Tl-UgP"/>
-                        <segue destination="kZD-HD-gp6" kind="relationship" relationship="viewControllers" id="5xm-UR-Q3q"/>
-                        <segue destination="6a7-dx-vMP" kind="relationship" relationship="viewControllers" id="nW3-eI-dB9"/>
+                        <segue destination="K2L-gR-qQ7" kind="relationship" relationship="viewControllers" id="18x-U6-e6b"/>
+                        <segue destination="kZD-HD-gp6" kind="relationship" relationship="viewControllers" id="v6F-Ka-vZD"/>
+                        <segue destination="6a7-dx-vMP" kind="relationship" relationship="viewControllers" id="qgk-0M-Yv7"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CXK-7x-pt7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="112.5"/>
         </scene>
-        <!--ЧАТ-->
+        <!--ЛЮДИ-->
         <scene sceneID="VlF-kM-Luy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SFj-JS-og9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="ЧАТ" image="text.bubble.fill" catalog="system" id="eCo-1a-h1y"/>
+                    <tabBarItem key="tabBarItem" title="ЛЮДИ" image="person.3.fill" catalog="system" id="eCo-1a-h1y"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UoD-Nv-xbK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -158,6 +175,7 @@
     <resources>
         <image name="blackMonkey" width="240" height="360"/>
         <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="person.3.fill" catalog="system" width="71" height="34"/>
         <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
         <image name="text.bubble.fill" catalog="system" width="64" height="54"/>
     </resources>

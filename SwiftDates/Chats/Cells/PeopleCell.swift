@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainChatCell: UITableViewCell {
+class PeopleCell: UITableViewCell {
 	
 	@IBOutlet weak var photo: UIImageView!
 	

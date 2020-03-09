@@ -12,7 +12,7 @@ extension UILabel {
 	func setupLabel(cornerRadius: CGFloat, borderWidth: CGFloat, bgColor: UIColor, borderColor: CGColor) {
 		self.layer.cornerRadius = cornerRadius
 		self.layer.borderWidth = borderWidth
-		self.backgroundColor = bgColor.withAlphaComponent(0.5)
+		self.backgroundColor = bgColor.withAlphaComponent(0.75)
 		self.layer.borderColor = borderColor
 		self.clipsToBounds = true
 	}

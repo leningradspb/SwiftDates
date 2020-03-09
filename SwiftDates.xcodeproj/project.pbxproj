@@ -10,7 +10,7 @@
 		267AD3DE24159EA400B7E52B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267AD3DD24159EA400B7E52B /* Extensions.swift */; };
 		26AA2A3C241586B6000C8F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A3B241586B6000C8F7B /* AppDelegate.swift */; };
 		26AA2A3E241586B6000C8F7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A3D241586B6000C8F7B /* SceneDelegate.swift */; };
-		26AA2A40241586B6000C8F7B /* AllChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A3F241586B6000C8F7B /* AllChatsVC.swift */; };
+		26AA2A40241586B6000C8F7B /* PeopleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A3F241586B6000C8F7B /* PeopleVC.swift */; };
 		26AA2A43241586B6000C8F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26AA2A41241586B6000C8F7B /* Main.storyboard */; };
 		26AA2A46241586B6000C8F7B /* SwiftDates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A44241586B6000C8F7B /* SwiftDates.xcdatamodeld */; };
 		26AA2A48241586BF000C8F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26AA2A47241586BF000C8F7B /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 		26AA2A7024158E92000C8F7B /* MontserratAlternates-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AA2A6124158E92000C8F7B /* MontserratAlternates-ExtraLightItalic.ttf */; };
 		26AA2A7124158E92000C8F7B /* PlayfairDisplaySC-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AA2A6224158E92000C8F7B /* PlayfairDisplaySC-Bold.ttf */; };
 		26AA2A7224158E92000C8F7B /* MontserratAlternates-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26AA2A6324158E92000C8F7B /* MontserratAlternates-Thin.ttf */; };
-		26AA2A742415944F000C8F7B /* MainChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A732415944F000C8F7B /* MainChatCell.swift */; };
+		26AA2A742415944F000C8F7B /* PeopleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A732415944F000C8F7B /* PeopleCell.swift */; };
 		26AA2A79241594B4000C8F7B /* CellsID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AA2A78241594B4000C8F7B /* CellsID.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,7 +36,7 @@
 		26AA2A38241586B6000C8F7B /* SwiftDates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26AA2A3B241586B6000C8F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26AA2A3D241586B6000C8F7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26AA2A3F241586B6000C8F7B /* AllChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChatsVC.swift; sourceTree = "<group>"; };
+		26AA2A3F241586B6000C8F7B /* PeopleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleVC.swift; sourceTree = "<group>"; };
 		26AA2A42241586B6000C8F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26AA2A45241586B6000C8F7B /* SwiftDates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftDates.xcdatamodel; sourceTree = "<group>"; };
 		26AA2A47241586BF000C8F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		26AA2A6124158E92000C8F7B /* MontserratAlternates-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontserratAlternates-ExtraLightItalic.ttf"; path = "Fonts/MontserratAlternates-ExtraLightItalic.ttf"; sourceTree = SOURCE_ROOT; };
 		26AA2A6224158E92000C8F7B /* PlayfairDisplaySC-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PlayfairDisplaySC-Bold.ttf"; path = "Fonts/PlayfairDisplaySC-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		26AA2A6324158E92000C8F7B /* MontserratAlternates-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "MontserratAlternates-Thin.ttf"; path = "Fonts/MontserratAlternates-Thin.ttf"; sourceTree = SOURCE_ROOT; };
-		26AA2A732415944F000C8F7B /* MainChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainChatCell.swift; sourceTree = "<group>"; };
+		26AA2A732415944F000C8F7B /* PeopleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCell.swift; sourceTree = "<group>"; };
 		26AA2A78241594B4000C8F7B /* CellsID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellsID.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +142,7 @@
 		26AA2A7624159464000C8F7B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				26AA2A732415944F000C8F7B /* MainChatCell.swift */,
+				26AA2A732415944F000C8F7B /* PeopleCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -150,7 +150,7 @@
 		26AA2A772415946B000C8F7B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				26AA2A3F241586B6000C8F7B /* AllChatsVC.swift */,
+				26AA2A3F241586B6000C8F7B /* PeopleVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -237,9 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26AA2A40241586B6000C8F7B /* AllChatsVC.swift in Sources */,
+				26AA2A40241586B6000C8F7B /* PeopleVC.swift in Sources */,
 				26AA2A53241587B2000C8F7B /* Colors.swift in Sources */,
-				26AA2A742415944F000C8F7B /* MainChatCell.swift in Sources */,
+				26AA2A742415944F000C8F7B /* PeopleCell.swift in Sources */,
 				267AD3DE24159EA400B7E52B /* Extensions.swift in Sources */,
 				26AA2A46241586B6000C8F7B /* SwiftDates.xcdatamodeld in Sources */,
 				26AA2A3C241586B6000C8F7B /* AppDelegate.swift in Sources */,

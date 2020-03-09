@@ -9,5 +9,5 @@
 import Foundation
 
 enum CellsID: String {
-	case MainChatCellID = "MainChatCellID"
+	case PeopleCellID = "PeopleCellID"
 }
